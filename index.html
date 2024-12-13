@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./STORE PREMIUM.png" alt="">
+            <h2>Tienda de mentiritas</h2>
+           
+        </div>
+        <nav class="nav">
+            <button id="btn-inicio">Inicio</button>
+            <button id="btn-categorias">categorias</button>
+        </nav>
+        <div class="user-options">
+            <a href="#">Login</a>
+            <button id="btn-cart">Carrito</button>
+        </div>
+
+        <div id="cart-modal" class="cart-modal" style="display: none;">
+            <div class="cart-modal-content">
+                <span class="close-cart-modal">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="cart-items"></div>
+                <button id="checkout-btn">Pagar</button>
+            </div>
+        </div>
+        
+        
+
+    </header>
+
+
+    <div class="inicio">
+        <section class="hero">
+            <h1>Bienvenido a nuestra tienda</h1>
+            <p>Encuentra los mejores productos al mejor precio</p>
+            
+            <!-- Eslogan publicitario -->
+            <p class="slogan">"La mejor calidad al alcance de tus manos"</p>
+        </section>
+
+        <div class="follow-us">
+            <div class="promotional-images">
+                <p>Descubre nuestras ofertas exclusivas</p>
+            </div>
+            <div class="social-icons">
+                <p>Síguenos en redes sociales:</p>
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <section class="featured-categories">
+            <h2>Categorías Destacadas</h2>
+            <div class="categories-container" id="featured-categories-container">
+                <!-- Las categorías destacadas se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+    </div>
+
+
+    <div class="categorias">
+        <section class="categories">
+            <form id="category-form">
+                <label for="category-select">Elige una categoría:</label>
+                <select id="category-select">
+                    <!-- Las opciones de categorías serán cargadas dinámicamente -->
+                </select>
+                <button type="submit" id="show-products-btn">Mostrar productos</button>
+            </form>
+            <div id="products-container" class="products">
+                <!-- Los productos se mostrarán aquí -->
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Ayuda</h4>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Atención al cliente</a>
+        </div>
+        <div class="footer-section">
+            <h4>Nosotros</h4>
+            <a href="#">Quiénes somos</a>
+            <a href="#">Carreras</a>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <div class="footer-section">
+            <h4>Métodos de pago</h4>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+
+            <h4>Redes sociales</h4>
+            <i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-twitter"></i></a>
+             <i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
